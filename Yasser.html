@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- الشريط العلوي -->
+    <header>
+        <h1>NorthernTrust</h1>
+        <div class="icons">
+            <span>🔔</span>
+            <span>📧</span>
+            <span>🌍</span>
+        </div>
+    </header>
+
+    <!-- شريط الإشعارات -->
+    <div class="notification-bar">
+        🔔 فرصة جديدة: احصل على مكافأة عند دعوة 30 شخصًا!
+    </div>
+
+    <!-- قسم الباقات -->
+    <section class="plans">
+        <h2>قاعة المهام</h2>
+
+        <div class="plan">
+            <img src="vip0.png" alt="VIP0">
+            <div class="plan-info">
+                <h3>VIP0</h3>
+                <p>$2.00 عمولة الطلب</p>
+            </div>
+            <button class="buy-button" onclick="buyPlan('VIP0', 2.00)">شراء الباقة</button>
+        </div>
+
+        <div class="plan">
+            <img src="vip1.png" alt="VIP1">
+            <div class="plan-info">
+                <h3>VIP1</h3>
+                <p>$9.50 عمولة الطلب</p>
+            </div>
+            <button class="buy-button" onclick="buyPlan('VIP1', 9.50)">شراء الباقة</button>
+        </div>
+
+        <div class="plan locked">
+            <img src="vip2.png" alt="VIP2">
+            <div class="plan-info">
+                <h3>VIP2</h3>
+                <p>$21.00 عمولة الطلب</p>
+            </div>
+            <button class="buy-button" onclick="buyPlan('VIP2', 21.00)">شراء الباقة</button>
+        </div>
+
+        <div class="plan locked">
+            <img src="vip3.png" alt="VIP3">
+            <div class="plan-info">
+                <h3>VIP3</h3>
+                <p>$64.00 عمولة الطلب</p>
+            </div>
+            <button class="buy-button" onclick="buyPlan('VIP3', 64.00)">شراء الباقة</button>
+        </div>
+
+        <div class="plan locked">
+            <img src="vip4.png" alt="VIP4">
+            <div class="plan-info">
+                <h3>VIP4</h3>
+                <p>$177.00 عمولة الطلب</p>
+            </div>
+            <button class="buy-button" onclick="buyPlan('VIP4', 177.00)">شراء الباقة</button>
+        </div>
+
+    </section>
+
+    <!-- شريط التنقل السفلي -->
+    <nav>
+        <button>🏠 بيت</button>
+        <button>✅ مهمة</button>
+        <button>👥 فريق</button>
+        <button>⭐ كبار الشخصيات</button>
+        <button>🙍‍♂️ أنا</button>
+    </nav>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>مرحبًا بك في الموقع!</h1>
+        <p>لقد سجلت الدخول بنجاح.</p>
+    </div>
+</body>
+</html>
